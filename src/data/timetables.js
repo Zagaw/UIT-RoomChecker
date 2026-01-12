@@ -1651,8 +1651,27 @@ export const timetables = {
 };
 
 // Define all possible rooms
-export const allRooms = new Set([
+/*export const allRooms = new Set([
   ...Array.from({ length: 6 }, (_, i) => i + 321),
   ...Array.from({ length: 6 }, (_, i) => i + 331),
   ...Array.from({ length: 6 }, (_, i) => i + 231)
+]);*/
+export const allRooms = new Set([
+  // 321–326
+  ...Array.from({ length: 6 }, (_, i) => i + 321),
+
+  // 331–336
+  ...Array.from({ length: 6 }, (_, i) => i + 331),
+
+  // 231–236
+  ...Array.from({ length: 6 }, (_, i) => i + 231),
+
+  // 421–426
+  ...Array.from({ length: 6 }, (_, i) => i + 421),
+
+  // 431–436
+  ...Array.from({ length: 6 }, (_, i) => i + 431),
+
+  // 213–215 (only 3 rooms)
+  ...Array.from({ length: 3 }, (_, i) => i + 213),
 ]);
