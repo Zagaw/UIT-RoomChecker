@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { timetables, allRooms } from '../data/timetables';
 
-const RoomChecker = ({ userName }) => {
+const RoomChecker = () => {
   const [day, setDay] = useState('Monday');
   const [time, setTime] = useState('8:30-9:30');
   const [freeRooms, setFreeRooms] = useState([]);
@@ -63,7 +63,7 @@ const RoomChecker = ({ userName }) => {
       }}
     >
       <div className="text-center mb-8">
-        <h1 className="text-white text-4xl font-bold mb-2">Welcome {userName}</h1>
+        <h1 className="text-white text-4xl font-bold mb-2">Welcome</h1>
         <div className="flex items-center justify-center gap-4 mb-4">
           <img 
             className="w-24 h-auto" 
